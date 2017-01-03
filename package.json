@@ -1,0 +1,31 @@
+{
+  "name": "godev.space",
+  "version": "0.1.0",
+  "description": "Web application for Godev.space",
+  "main": "src/index.js",
+  "scripts": {
+		"build": "next build",
+		"start": "next start",
+    "dev": "next",
+    "test": "xo"
+  },
+	"xo": {
+		"esnext": true,
+    "semicolon": false,
+		"rules": {
+			"no-unused-vars": 0
+		}
+	},
+  "repository": {
+    "url": "git@github.com:LasaleFamine/godev.space.git",
+    "type": "git"
+  },
+  "author": "LasaleFamine <info@godev.space>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^1.2.3"
+  },
+  "devDependencies": {
+    "xo": "^0.17.1"
+  }
+}

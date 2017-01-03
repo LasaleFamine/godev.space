@@ -1,0 +1,69 @@
+html {
+    height: 100%;
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#__next, #__main {
+    height: 100%;
+}
+
+.hero.is-transparent {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.hero.is-transparent h1 {
+    color: #fff;
+}
+
+.icon-bar li {
+    overflow: hidden;
+    background: transparent;
+    list-style: none;
+    white-space: nowrap;
+    margin-right: 10px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.icon-bar li a {
+    opacity: 0;
+    color: #666;
+    max-width: 0;
+    display: inline-block;
+    text-decoration: none;
+		padding: 0;
+    transition: max-width .5s ease-out .1s, opacity .5s ease-out .1s, color;
+}
+
+.icon-bar li a:hover {
+    color: #eee;
+		text-decoration: none!important;
+}
+
+.icon-bar li a span {
+    float: right;
+    display: block;
+    padding-right: 1em;
+		line-height: 2.5;
+}
+
+.icon-bar li>i {
+    color: #FFF;
+    line-height: 1;
+    font-size: 25px;
+    display: inline-block;
+    padding: .125em .375em;
+}
+
+.icon-bar li:hover {}
+.icon-bar li:hover a {
+    opacity: 1;
+    max-width: 150px;
+    transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
+}
