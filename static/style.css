@@ -9,7 +9,7 @@ html body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#__next, #__main {
+body > div:nth-of-type(1), #__next, #__main {
     height: 100%;
 }
 
@@ -66,4 +66,8 @@ html body {
     opacity: 1;
     max-width: 150px;
     transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
+}
+
+.tabs.icons-nav {
+	justify-content: center;
 }

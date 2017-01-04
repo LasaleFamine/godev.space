@@ -1,8 +1,9 @@
 body {
 	background: #eee;
 }
+
 .section__projects {
-	top: -30px;
+	padding: 30px;
 	position: relative;
 }
 

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/prefetch'
 
 export default () => (
 
@@ -33,7 +34,7 @@ export default () => (
 					</div>
 
 					<div className="hero-foot">
-						<nav className="tabs">
+						<nav className="tabs icons-nav">
 							<div className="container">
 								<ul className="icon-bar">
 									<li className="fadeInLeft animated">
@@ -50,7 +51,7 @@ export default () => (
 									</li>
 									<li className="fadeInRight animated">
 										<i className="fa fa-tasks" aria-hidden="true"></i>
-										<a href="/projects"><span>/projects</span></a>
+										<Link href="/projects"><a><span>/projects</span></a></Link>
 									</li>
 								</ul>
 							</div>
