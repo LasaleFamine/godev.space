@@ -1,6 +1,6 @@
 import Meta from './../components/meta'
 
-export default ({ children }) => (
+export default ({children}) => (
 	<div id="__main">
 
     {children}
