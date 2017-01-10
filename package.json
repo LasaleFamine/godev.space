@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "next build",
-    "start": "next start",
+    "start": "next start --p $PORT",
     "dev": "next",
     "test": "xo"
   },
