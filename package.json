@@ -4,6 +4,7 @@
   "description": "Web application for Godev.space",
   "main": "src/index.js",
   "scripts": {
+    "postinstall": "yarn run build",
     "build": "next build",
     "start": "next start --p $PORT",
     "dev": "next",
