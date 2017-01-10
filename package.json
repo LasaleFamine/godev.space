@@ -4,9 +4,9 @@
   "description": "Web application for Godev.space",
   "main": "src/index.js",
   "scripts": {
-    "postinstall": "yarn run build",
+    "postinstall": "heroku-nextjs-build",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "dev": "next",
     "test": "xo"
   },
@@ -17,6 +17,12 @@
       "no-unused-vars": 0
     }
   },
+  "engines": {
+    "node": "6.9.x"
+  },
+  "cacheDirectories": [
+    "nextjs/node_modules"
+  ],
   "repository": {
     "url": "git@github.com:LasaleFamine/godev.space.git",
     "type": "git"
@@ -24,6 +30,7 @@
   "author": "LasaleFamine <info@godev.space>",
   "license": "MIT",
   "dependencies": {
+    "@mars/heroku-nextjs-build": "^1.0.1",
     "next": "^2.0.0-beta",
     "react": "^15.4.1"
   },
