@@ -1,6 +1,6 @@
 {
   "name": "godev.space",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Web application for Godev.space",
   "main": "src/index.js",
   "scripts": {
