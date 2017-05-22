@@ -15,7 +15,8 @@
     "semicolon": false,
     "rules": {
       "no-unused-vars": 0
-    }
+    },
+    "ignores": ["static/analytics.js"]
   },
   "engines": {
     "node": "6.9.x"
