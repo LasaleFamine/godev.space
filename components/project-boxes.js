@@ -5,15 +5,22 @@ export default () => (
 		<div className="container material__cards">
 			<div className="columns">
 				<div className="column flipInX animated">
+					<a href="https://comisonews.it">
+						<img className="material__card_dimension material__card material__card-1" src="/static/screencapture-comisonews.png"/>
+					</a>
+				</div>
+				<div className="column flipInX animated">
 					<a href="https://ragusabot.com">
 						<img className="material__card_dimension material__card material__card-1" src="/static/screencapture-ragusabot.png"/>
 					</a>
 				</div>
 				<div className="column flipInX animated">
-					<a href="https://.com">
+					<a href="https://github.com/LasaleFamine/ng-pagespeed-cs50x">
 						<img className="material__card_dimension material__card material__card-1" src="/static/screencapture-ng-pagespeed.png"/>
 					</a>
 				</div>
+			</div>
+			<div className="columns">
 				<div className="column flipInY animated">
 					<a href="https://beta.webcomponents.org/author/lasalefamine">
 						<img className="material__card_dimension material__card material__card-1" src="/static/web-components-polymer.png"/>
