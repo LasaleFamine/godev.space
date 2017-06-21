@@ -11,6 +11,7 @@
     "test": "xo"
   },
   "xo": {
+    "space": true,
     "esnext": true,
     "semicolon": false,
     "rules": {
