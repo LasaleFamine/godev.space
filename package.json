@@ -17,10 +17,12 @@
     "rules": {
       "no-unused-vars": 0
     },
-    "ignores": ["static/analytics.js"]
+    "ignores": [
+      "static/analytics.js"
+    ]
   },
   "engines": {
-    "node": "6.9.x"
+    "node": ">=6.9"
   },
   "cacheDirectories": [
     "nextjs/node_modules"
@@ -32,11 +34,12 @@
   "author": "LasaleFamine <info@godev.space>",
   "license": "MIT",
   "dependencies": {
-    "@mars/heroku-nextjs-build": "^1.0.1",
-    "next": "^2.0.0-beta",
-    "react": "^15.4.1"
+    "@mars/heroku-nextjs-build": "2.0.0",
+    "next": "4.2.1",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
   },
   "devDependencies": {
-    "xo": "^0.17.1"
+    "xo": "0.18.2"
   }
 }

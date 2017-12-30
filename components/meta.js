@@ -6,7 +6,6 @@ export default () => (
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css" />
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-			<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css" rel="stylesheet" type="text/css" />
 			<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css" />
 			<link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png" />
 			<link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png" />
@@ -39,16 +38,26 @@ export default () => (
 
 			.hero.is-transparent h1 {
 			    color: #fff;
-			}
+      }
+
+      .hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+      }
+
+      .icon-bar {
+        display: flex;
+        justify-content: center;
+      }
 
 			.icon-bar li {
-			    overflow: hidden;
-			    background: transparent;
+          background: transparent;
+          padding-right: 35px;
 			    list-style: none;
 			    white-space: nowrap;
-			    margin-right: 10px;
-			    border-radius: 25px;
-			    display: inline-block;
 			}
 
 			.icon-bar li a {
@@ -61,32 +70,33 @@ export default () => (
 			    transition: max-width .5s ease-out .1s, opacity .5s ease-out .1s, color;
 			}
 
-			.icon-bar li a:hover {
+			.icon-bar a {
 			    color: #eee;
-					text-decoration: none!important;
-			}
+					text-decoration: none;
+      }
 
-			.icon-bar li a span {
-			    float: right;
-			    display: block;
-			    padding-right: 1em;
-					line-height: 2.5;
-			}
-
-			.icon-bar li>i {
+			.icon-bar li > i {
 			    color: #FFF;
 			    line-height: 1;
 			    font-size: 25px;
 			    display: inline-block;
 			    padding: .125em .375em;
-			}
+      }
+
+      .icon-bar li a span {
+        visibility: hidden;
+      }
 
 			.icon-bar li:hover {}
 			.icon-bar li:hover a {
 			    opacity: 1;
 			    max-width: 150px;
 			    transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
-			}
+      }
+
+      .icon-bar li:hover a span {
+        visibility: visible;
+      }
 
 			.tabs.icons-nav {
 				justify-content: center;
