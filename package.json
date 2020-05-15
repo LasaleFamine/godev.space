@@ -1,42 +1,63 @@
 {
   "name": "godev.space",
-  "version": "1.0.4",
-  "description": "Web application for Godev.space",
-  "main": "src/index.js",
-  "scripts": {
-    "postinstall": "heroku-nextjs-build",
-    "build": "next build",
-    "start": "next start -p $PORT",
-    "dev": "next",
-    "test": "xo"
-  },
-  "xo": {
-    "space": true,
-    "esnext": true,
-    "semicolon": false,
-    "rules": {
-      "no-unused-vars": 0
-    },
-    "ignores": ["static/analytics.js"]
-  },
-  "engines": {
-    "node": "6.9.x"
-  },
-  "cacheDirectories": [
-    "nextjs/node_modules"
-  ],
-  "repository": {
-    "url": "git@github.com:LasaleFamine/godev.space.git",
-    "type": "git"
-  },
-  "author": "LasaleFamine <info@godev.space>",
+  "version": "0.0.0",
+  "description": "A blog-ready 11ty starter based on PostCSS, width RSS feed and Native Elements.",
+  "author": "Alessio Occhipinti",
+  "main": "dist/assets/js/app.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lasalefamine/godev.space"
+  },
+  "scripts": {
+    "clean": "run-s clean:*",
+    "clean:cache": "rimraf ./.cache",
+    "clean:dist": "rimraf ./dist",
+    "clean:bundle": "rimraf ./bundle",
+    "build": "cross-env ELEVENTY_ENV=production run-s clean:* build:assets build:html",
+    "build:html": "eleventy",
+    "build:assets": "parcel build ./src/assets/css/app.pcss ./src/assets/js/app.js --out-dir ./bundle --no-source-maps",
+    "watch": "cross-env ELEVENTY_ENV=development run-s clean:* build:assets && run-p serve watch:*",
+    "serve": "eleventy --serve --port=8080",
+    "watch:assets": "parcel watch ./src/assets/css/app.pcss ./src/assets/js/app.js --out-dir ./bundle --no-source-maps --no-hmr",
+    "lint": "eslint .",
+    "dev": "yarn watch"
+  },
   "dependencies": {
-    "@mars/heroku-nextjs-build": "^1.0.1",
-    "next": "^2.0.0-beta",
-    "react": "^15.4.1"
+    "@11ty/eleventy": "0.10.0",
+    "@11ty/eleventy-plugin-rss": "1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "3.0.1",
+    "@babel/core": "7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "@tbranyen/jsdom": "13.0.0",
+    "cssnano": "4.1.10",
+    "cssnano-preset-advanced": "4.0.7",
+    "eleventy-plugin-pwa": "1.0.8",
+    "html-minifier": "4.0.0",
+    "markdown-it": "10.0.0",
+    "postcss-preset-env": "6.7.0",
+    "postcss-reporter": "6.0.1",
+    "slugify": "1.3.6",
+    "turbolinks": "5.2.0",
+    "what-input": "5.2.6"
   },
   "devDependencies": {
-    "xo": "^0.17.1"
-  }
+    "@lasalefamine/eslint-config-base": "^0.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "npm-run-all": "4.1.5",
+    "parcel-bundler": "1.12.4",
+    "postcss-cli": "^7.1.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.2"
+  },
+  "browserslist": [
+    "last 1 Chrome versions",
+    "last 1 Firefox versions",
+    "last 1 Safari versions",
+    "last 1 Edge versions"
+  ]
 }

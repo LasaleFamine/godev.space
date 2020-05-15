@@ -1,0 +1,13 @@
+{
+  "items": [{
+      "text": "Blog",
+      "url": "/blog/",
+      "external": false
+    },
+    {
+      "text": "Projects",
+      "url": "/projects/",
+      "external": false
+    }
+  ]
+}

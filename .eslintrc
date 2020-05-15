@@ -1,0 +1,9 @@
+{
+  "extends": "@lasalefamine/eslint-config-base",
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/no-var-requires": 0
+  }
+}

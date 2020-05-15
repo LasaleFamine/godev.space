@@ -1,0 +1,19 @@
+{
+  "name": "godev.space",
+  "shortDesc": "Alessio Occhipinti here, Sicilian guy who loves to make things, mostly on the web.",
+  "url": "https://godev.space",
+  "lang": "en",
+  "authorHandle": "@lasalefamine",
+  "authorName": "Alessio Occhipinti",
+  "syntaxTheme": "prism-material-light.css",
+  "permalinkClass": ["permalink"],
+  "iframeClass": ["iframes-wrapper"],
+  "codeClass": ["code-wrapper"],
+  "figureClass": ["figure"],
+  "paths": {
+    "src": "src",
+    "blogdir": "blog",
+    "includes": "components",
+    "output": "dist"
+  }
+}

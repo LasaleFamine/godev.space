@@ -1,0 +1,23 @@
+<header class="Header">
+  {% if navigation.items %}
+    <nav class="Header__Navigation">
+      <a class="Header__Logo" href="/">
+        <img src="/square-transparent.png" width="48" height="48" alt="Logo" />
+      </a>
+      {# {% for item in navigation.items %}
+        {% set relExternal = '' %}
+        {% set isCurrent = '' %}
+
+        {% if item.external %}
+          {% set relExternal = ' rel="external" target="_blank"' %}
+        {% endif %}
+        {% if page.url == item.url %}
+          {% set isCurrent = ' aria-current="page"' %}
+        {% endif %}
+        <a href="{{ item.url }}"{{ relExternal | safe }}{{ isCurrent | safe }}>
+          <b>{{ item.text }}</b>
+        </a>
+      {% endfor %} #}
+    </nav>
+  {% endif %}
+</header>
