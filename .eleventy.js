@@ -94,7 +94,7 @@ module.exports = (eleventyConfig) => {
       rule: {
         match: /<\/head>/i,
         fn(snippet, match) {
-          return `${snippet}${match};
+          return `${snippet}${match}`;
         },
       },
     },
