@@ -1,0 +1,90 @@
+/**
+ * Declare Regular Font Face
+ */
+
+ @font-face {
+  font-family: 'JetBrainsMono';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Load only latin glyphs */
+  src:
+    local('JetBrainsMono Regular'),
+    url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+/**
+ * Declare Medium Font Face
+ */
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Load only latin glyphs */
+  src:
+    local('JetBrainsMono Medium'),
+    url('/font/JetBrainsMono-Medium.woff2') format('woff2');
+}
+
+/**
+ * Declare Bold Font Face
+ */
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Load only latin glyphs */
+  src:
+    local('JetBrainsMono Bold'),
+    url('/font/JetBrainsMono-Bold.woff2') format('woff2');
+}
+
+/**
+ * Declare Bold Italic Font Face
+ */
+
+ @font-face {
+  font-family: 'JetBrainsMono';
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Load only latin glyphs */
+  src:
+    local('JetBrainsMono BoldItalic'),
+    url('/font/JetBrainsMono-Bold-Italic.woff2') format('woff2');
+}
+
+
+/**
+ * Declare Black Font Face
+ */
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Load only latin glyphs */
+  src:
+    local('JetBrainsMono ExtrBold'),
+    url('/font/JetBrainsMono-ExtrBold.woff2') format('woff2');
+}
+
+/**
+ * Declare Black Italic Font Face
+ */
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Load only latin glyphs */
+  src:
+    local('JetBrainsMono ExtrBoldItalic'),
+    url('/font/JetBrainsMono-ExtrBold-Italic.woff2') format('woff2');
+}
